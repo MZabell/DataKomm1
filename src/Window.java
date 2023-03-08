@@ -1,11 +1,6 @@
 import javax.swing.*;
-import java.awt.*;
 
 public class Window extends JFrame {
-    public static void main(String[] args) {
-        new Window();
-    }
-
     public Window() {
         GraphicsPanel gp = new GraphicsPanel();
 
@@ -13,5 +8,9 @@ public class Window extends JFrame {
         setVisible(true);
         getContentPane().add(gp);
         pack();
+    }
+
+    public static void main(String[] args) {
+        new Window();
     }
 }
