@@ -30,9 +30,9 @@ public class ClientConn {
             for (Command c : commands) {
                 String response = reader.readLine();
                 if (c.commandACK(response)) {
-                    output.writeBytes(c.command);
+                    output.writeBytes(c.toString());
                     System.out.println("SERVER: " + response);
-                    System.out.println("CLIENT: " + c.command);
+                    System.out.println("CLIENT: " + c);
                 } else {
                     System.out.println("CLIENT: Bad command. Aborting...");
                     break;

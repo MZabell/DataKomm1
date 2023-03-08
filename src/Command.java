@@ -13,4 +13,9 @@ public class Command {
 
         return this.response >= 220 && this.response <= 354;
     }
+
+    @Override
+    public String toString() {
+        return command;
+    }
 }
