@@ -1,5 +1,6 @@
 import javax.swing.*;
 
+// Class that contains the frame for program.
 public class Window extends JFrame {
     public Window() {
         GraphicsPanel gp = new GraphicsPanel();
